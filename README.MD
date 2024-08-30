@@ -43,4 +43,6 @@ Visualizing Results with TensorBoard
 	2.	Inspect the graphs:
 View loss, accuracy, and other metrics over training epochs.
 
-3. Result
+3. Results
+    Train Acc:
+        ![alt text](image.png)
