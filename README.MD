@@ -18,6 +18,7 @@ This project involves the classification of exercise intensity levels based on E
 
 2.	Load the data:
 Ensure your data is structured correctly and available in the specified format (ECG and PCG signals as input).
+
 Download the files using your terminal: wget -r -N -c -np https://physionet.org/files/ephnogram/1.0.0/
 
 3.	Prepare the environment:
