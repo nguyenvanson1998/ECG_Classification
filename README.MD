@@ -13,7 +13,7 @@ This project involves the classification of exercise intensity levels based on E
 
 1. **Install dependencies**:
    ```bash
-   pip install tensorflow sklearn numpy
+   pip install tensorflow sklearn numpy scipy
 
 
 2.	Load the data:
@@ -26,13 +26,25 @@ This project involves the classification of exercise intensity levels based on E
 3.	Prepare the environment:
 Make sure your runtime environment is set to use a TPU.
 
-Training the Model
+Data preprocessing:
+    - Load .mat file
+    - Concat ECG first row and PCG signals
+    - split each sample with 10k points out of len(signal)
+    - get the labels for each sample in ECGPCGSpreadsheet.csv
+    - output: all_labels with shape (numsample, num_features, dim) = (64k, 10k, 2)
+Training the Model 2 modes:
+    - Model achitechture
+            Input > Con1D(64,3) > MaxPooling(2) > Con1D(128,3) > MaxPooling(2) > BatchNormalization > LSTM(64) > Dense(128) > Dense(6)
+    - Train with CPU
+        Training step by step in file ECGPCG_Classification.ipynb
+    - Train with TPU
+        Training step by step in file ECGPCG_Classification.ipynb
+            1.	Initialize TPU
+            2.  Build the model:Define the CNN-LSTM model within the TPU strategy scope.
+            3.	Compile the model:
+            4.	Train the model: Use TensorBoard for monitoring.
+            5.	Evaluate and save the model
 
-	1.	Initialize TPU
-    2.  Build the model:Define the CNN-LSTM model within the TPU strategy scope.
-    3.	Compile the model:
-    4.	Train the model: Use TensorBoard for monitoring.
-    5.	Evaluate and save the model:
 
 Visualizing Results with TensorBoard
 
