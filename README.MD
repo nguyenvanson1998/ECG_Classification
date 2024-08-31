@@ -45,4 +45,7 @@ View loss, accuracy, and other metrics over training epochs.
 
 3. Results
     Train Acc:
-        ![alt text](image.png)
+        ![alt text](image-1.png)
+    
+    Train Loss:
+        ![alt text](image-2.png)
