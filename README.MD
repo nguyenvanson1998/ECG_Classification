@@ -38,7 +38,7 @@ Training the Model 2 modes:
     - Train with CPU
         Training step by step in file ECGPCG_Classification.ipynb
     - Train with TPU
-        Training step by step in file ECGPCG_Classification.ipynb
+        Training step by step in file ECGPCG_Classification-TPUs.ipynb
             1.	Initialize TPU
             2.  Build the model:Define the CNN-LSTM model within the TPU strategy scope.
             3.	Compile the model:
