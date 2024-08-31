@@ -63,3 +63,6 @@ View loss, accuracy, and other metrics over training epochs.
         ![alt text](epoch_loss.svg)
     Learning Rate:
         ![alt text](epoch_learning_rate.svg)
+
+On un-balance dataset it reach 94.38% Accuracy and 0.14 loss on Evaluate and outperform previous methods 94.1% acc and 0.21 loss
+![alt text](image.png)
