@@ -57,7 +57,9 @@ View loss, accuracy, and other metrics over training epochs.
 
 3. Results
     Train Acc:
-        ![alt text](image-3.png)
+        ![alt text](epoch_accuracy.svg)
     
     Train Loss:
-        ![alt text](image-4.png)
+        ![alt text](epoch_loss.svg)
+    Learning Rate:
+        ![alt text](epoch_learning_rate.svg)
